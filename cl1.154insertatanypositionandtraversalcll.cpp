@@ -37,6 +37,7 @@ void print(Node* tail)
 	if(temp==NULL)
 	{
 		cout<<"This list is empty"<<endl;
+		return;
 	}
 	else
 	{
