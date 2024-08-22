@@ -34,12 +34,19 @@ void insertatanyposition(Node* &tail,int element,int data)
 void print(Node* tail)
 {
 	Node *temp= tail;		
+	if(temp==NULL)
+	{
+		cout<<"This list is empty"<<endl;
+	}
+	else
+	{
 	do
 	{
 		cout<<tail->data<<" ";
 		tail=tail->next;
 	}while(tail!=temp);
 	cout<<endl;
+	}
 }
 
 
