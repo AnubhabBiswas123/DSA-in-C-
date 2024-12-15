@@ -57,7 +57,8 @@ void reverselevelordertraversal(node* root)
 				q.push(current->right);
 		}
 	}
-	st.pop();
+	if(st.empty()!=1)
+		st.pop();
 	while(st.empty()!=1)
 	{
 		while(st.empty()!=1 && st.top()!=NULL)
