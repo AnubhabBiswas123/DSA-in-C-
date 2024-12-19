@@ -47,6 +47,8 @@ pair<int,int> fastdiameter(node* root)
 }
 int diameter(node* root)
 {
+	if(root==NULL)
+		return 0;
 	return fastdiameter(root).first;
 }
 
